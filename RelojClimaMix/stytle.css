@@ -1,0 +1,144 @@
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    background: #0f0c29;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: azure;
+    font-size: 16px;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    /* min-width: 650px; */
+}
+
+.wrap {
+    width: 200%;
+    max-width: 1000px;
+    margin:0;
+    display: flex;
+    justify-content: center;
+}
+
+.widget {
+    width: 62%;
+    margin: 2em;
+}
+
+.widget p {
+    display: inline-block;
+    line-height: 1em;
+}
+
+.fecha  {
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 0.3125rem;
+    /* margin-bottom: 5px; */
+    background: rgba(0,0,0,.5);
+    padding: 20px;
+    width: 100%;          
+}
+
+.reloj {
+    width: 100%;
+    padding: 20px;
+    font-size: 4em;
+    text-align: center;
+    background-color: rgba(0,0,0,.5);
+}
+
+.reloj .caja-segundos {
+    display: inline-block;
+}
+
+.reloj .segundos,
+.reloj .ampm {
+    font-size: 2rem;
+    display: block;
+}
+
+#contenedor {
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+}
+
+#caja1, #caja2, #caja3 {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    padding-top: 20%;
+    width: 200px;
+    height: 200px;
+    border-radius: 5%;
+}
+
+#caja1 {
+    background-color: rgb(46, 149, 77) ;
+    color: azure ;
+}
+
+#caja2 {
+    background-color: rgb(83, 119, 218) ;
+    color: azure ;
+}
+
+#caja3 {
+    /* background-color: rgb(185, 29, 131) ; */
+    background-color: rgb(140, 85, 174) ;
+    color: azure ;
+
+}
+
+@media (max-width: 650px) {
+
+    body{
+        display:flex;
+        font-size: 12px;
+    }
+    .wrap {
+        width: 500px;
+        justify-content: center;
+        align-items: center;
+        margin: none;
+        padding: none;
+    }
+
+    .widget {
+        width: 100%;
+        margin: 1em;
+    }
+
+    #contenedor {
+        display: flexbox;
+        align-items: center;
+    }
+
+    #caja1, #caja2, #caja3 {
+        width: 150px;
+        height: 150px;
+    }
+
+    #icono-animado{
+        width: 100px;
+        height: 100px;
+    }
+
+.reloj .segundos,
+.reloj .ampm {
+    font-size: 25px;
+    display: block;
+    }
+}
