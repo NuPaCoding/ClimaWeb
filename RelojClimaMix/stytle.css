@@ -183,3 +183,44 @@ body {
     display: block;
     }
 }
+
+@media (max-width: 300px) {
+
+    body{
+        display:flex;
+        font-size: 10px;
+    }
+    .wrap {
+        width: 200px;
+        justify-content: center;
+        align-items: center;
+        margin: none;
+        padding: none;
+    }
+
+    .widget {
+        width: 100%;
+        margin: 1em;
+    }
+
+    #contenedor {
+        display: flexbox;
+        align-items: center;
+    }
+
+    #caja1, #caja2, #caja3 {
+        width: 80px;
+        height: 80px;
+    }
+
+    #icono-animado{
+        width: 35px;
+        height: 35px;
+    }
+
+.reloj .segundos,
+.reloj .ampm {
+    font-size: 15px;
+    display: block;
+    }
+}
