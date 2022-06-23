@@ -20,12 +20,12 @@
             pMes = document.getElementById('mes'),
             pYear = document.getElementById('year');
 
-        var semana = ['Domingo','Lunes','Martes','Miercoles','Jueves','Viernes','Sabado'];
+        var semana = ['Dom','Lun','Mar','Mie','Jue','Vie','Sab'];
         pDiaSemana.textContent = semana[diaSemana];
 
         pDia.textContent = dia;
 
-        var meses = ['Enero','Febrero','Marzo','Abril','Mayo','Junio','Julio','Agosto','Septiembre','Octubre','Noviembre','Diciembre'];
+        var meses = ['01','02','03','04','05','06','07','08','09','10','11','12'];
         pMes.textContent = meses[mes]
 
         pYear.textContent = year;
