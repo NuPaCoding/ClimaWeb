@@ -21,7 +21,7 @@
             pYear = document.getElementById('year');
 
         var semana = ['Dom  ','Lun  ','Mar  ','Mie  ','Jue  ','Vie  ','Sab  '];
-        pDiaSemana.textContent = semana[diaSemana];
+        pDiaSemana.textContent = semana[diaSemana]+'  ';
 
         pDia.textContent = dia;
 
